@@ -1,18 +1,17 @@
 # Bitcode
-Explain bitcoin programming with python code example. All code is tested with unitest.
-
-# Module structure
-* text explain meaning and reason behind the code
-* code example with python
-* unitest
+A bitcoin library for training bitcoin programming
 
 # Module list
 * finite_field
 * ecc
+* ecc_over_finite_field
 * bitcoin_curve
-* key
-* signature
+* sign_transaction
+* verify_transaction
+* serialization
 * transaction
-* network
+* script
+* transaction creation and validation
+* pay to script hash
 
 
