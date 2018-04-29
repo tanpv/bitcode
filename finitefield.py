@@ -15,8 +15,10 @@ Create a class which control field element
 			- division
 """
 
+
 from unittest import TestCase
 import unittest
+
 
 
 class FieldElement():
@@ -71,7 +73,7 @@ class FieldElement():
 
 		reduce alot of effort caculation when n > p
 		"""
-		num = pow(self.num, n%(self.prime-1), prime)
+		num = pow(self.num, n%(self.prime-1), self.prime)
 		return self.__class__(num, self.prime)
 
 	def __truediv__(self, other):
@@ -87,24 +89,37 @@ class FieldElement():
 		num = (self.num * pow(other.num, self.prime-2, self.prime)) % self.prime
 		return self.__class__(num, self.prime)
 
-		
+
 
 class  FieldElementTest(TestCase):
 
 	def test_add(self):
-		pass
+		a = FieldElement(2,13)
+		b = FieldElement(3,13)
+		self.assertEqual(a+b,FieldElement(5,13))
 
 	def test_sub(self):
-		pass
+		a = FieldElement(3,13)
+		b = FieldElement(2,13)
+		self.assertEqual(a-b, FieldElement(1,13))
 
 	def test_mul(self):
-		pass
+		a = FieldElement(2,13)
+		b = FieldElement(3,13)
+		self.assertEqual(a*b,FieldElement(6,13))
 
 	def test_pow(self):
-		pass
+		a = FieldElement(2,13)
+		self.assertEqual(a**3, FieldElement(8,13))
 
 	def test_div(self):
-		pass
+		a = FieldElement(6,13)
+		b = FieldElement(2,13)
+		self.assertEqual(a/b, FieldElement(3,13))
+
+
+if __name__ == '__main__':
+	unittest.main()
 
 
 
