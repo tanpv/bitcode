@@ -1,5 +1,5 @@
 # Bitcode
-Explain bitcoin programming with python code example.All code is tested with unitest.
+Explain bitcoin programming with python code example. All code is tested with unitest.
 
 # Module structure
 * text explain meaning and reason behind the code
