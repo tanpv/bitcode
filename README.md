@@ -7,9 +7,9 @@ explain bitcoin programming with python code example
 * unitest
 
 # module list
-* finite field
+* finite_field
 * ecc
-* bitcoin curve
+* bitcoin_curve
 * key
 * signature
 * transaction
