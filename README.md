@@ -1,12 +1,12 @@
-# bitcode
-explain bitcoin programming with python code example
+# Bitcode
+Explain bitcoin programming with python code example.All code is tested with unitest.
 
-# module structure
+# Module structure
 * text explain meaning and reason behind the code
 * code example with python
 * unitest
 
-# module list
+# Module list
 * finite_field
 * ecc
 * bitcoin_curve
