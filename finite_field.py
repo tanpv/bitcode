@@ -13,7 +13,7 @@ Create a class which control field element
 			- multiple
 			- power
 			- division
-			
+
 """
 
 
@@ -63,6 +63,11 @@ class FieldElement():
 		num = (self.num * other.num) % self.prime
 		return self.__class__(num, self.prime)
 
+	# multiple a field element with a number
+	def __rmul__(self, coefficient):
+		num = (self.num*coefficient) % self.prime
+		return self.__class__(num, self.prime)
+
 	def __pow__(self, n):
 		"""
 		fermat little theorem : num**(p-1) % p = 1
@@ -82,7 +87,7 @@ class FieldElement():
 			raise RuntimeError('can not divide two number in different fields')
 
 		"""
-			Use fermat little theorem
+			Use fermat little theorem\\
 			a/b % p
 			= a.(b**-1) % p
 			= a.b**p-2 % p because b**p-1 % p = 1 

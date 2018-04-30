@@ -81,7 +81,7 @@ class Point():
 			# y**2 = x**3 + ax + b
 			# 2ydy = 3x**2dx + a
 			# slop = dy/dx = (3x**2 + a) / 2y
-			s = (3*self.x**2+self.a) / 2*self.y
+			s = (3*self.x**2+self.a) / (2*self.y)
 			x = s**2 - 2*self.x
 			y = s*(self.x - x) - self.y
 			return self.__class__(x,y,self.a,self.b)
@@ -89,7 +89,6 @@ class Point():
 	def __rmul__(self, coefficcient):
 		# use add operaton to do scalar multiple
 		product = self.__class__(None, None, self.a, self.b)
-
 		for _ in range(coefficcient):
 			product += self
 
