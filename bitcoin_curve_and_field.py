@@ -66,4 +66,3 @@ class S256Point(Point):
 
 		return result
 
-
