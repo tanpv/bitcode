@@ -6,11 +6,16 @@
 	y**2 = x**3 + x*a + b
 
 	- a point on elliptic curve is defined by a, b and 2 cordinate x, y
+	
+	- following operation are defined on elliptic curve
+		- compare equal
+		- compare not equal
+		- add point to point
+		- scalar multiplication with point
 """
 
 from unittest import TestCase
 import unittest
-
 
 class Point():
 
@@ -92,6 +97,7 @@ class Point():
 
 
 
+# eliptic curve test over field of real number 
 class PointTest(TestCase):
 	
 	def test_on_curve(self):

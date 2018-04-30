@@ -2,12 +2,12 @@
 A bitcoin library for training bitcoin programming
 
 # Module list
-* finite_field
-* ecc
-* ecc_over_finite_field
-* bitcoin_curve
-* sign_transaction
-* verify_transaction
+* finite field
+* elliptic curve
+* elliptic curve over finite field
+* bitcoin curve and field
+* sign transaction
+* verify transaction
 * serialization
 * transaction
 * script
@@ -21,8 +21,4 @@ A bitcoin library for training bitcoin programming
 * get public key from private key
 * get address from public key
 * import and export private key
-* supported format
-.. pem
-.. der
-.. hex
-.. integer
+* supported format : pem, der, hex, integer
